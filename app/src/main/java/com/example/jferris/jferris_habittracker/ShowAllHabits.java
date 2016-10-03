@@ -12,6 +12,9 @@ import java.util.ArrayList;
 
 /**
  * Created by jferris on 30/09/16.
+ * Lists all the habits the user has created regardless of days they are meant to be used on
+ * This allows the user to complete and delete habits that are not listed in the today section
+ * From this Activity you may click on any of the listed items to find a list of the completions for that habit
  */
 public class ShowAllHabits extends Activity{
     private static final String FILENAME = "habitFile.sav";

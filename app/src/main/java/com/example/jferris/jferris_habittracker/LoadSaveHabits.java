@@ -18,10 +18,12 @@ import java.util.ArrayList;
 
 /**
  * Created by jferris on 29/09/16.
+ * loads and saves a list of habits into habitFile.sav
+ * used to store state of user habits and load again when app is started
  */
 public class LoadSaveHabits {
-    ArrayList<Habit> habitList;
-    Context context;
+    private ArrayList<Habit> habitList;
+    private Context context;
     private static final String FILENAME = "habitFile.sav";
 
     public LoadSaveHabits(Context context, ArrayList<Habit> habitList) {

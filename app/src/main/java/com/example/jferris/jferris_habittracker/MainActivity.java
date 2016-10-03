@@ -6,36 +6,24 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
+
+/**
+ * This is the Main Activity for the app
+ * This activity lists the habits that are to be completed for the day
+ * The user may complete or delete habits shown on the list
+ * There is a drop down menu that allows the user to navigate to the create habit activity or showallhabits activity
+ */
 
 public class MainActivity extends Activity {
     private ArrayList<Habit> habitList = new ArrayList<Habit>();
     private ArrayList<Habit> todayHabitList;
     private ListOfHabits habitAdapter;
     private ListView dailyHabitsList;
-    LoadSaveHabits loadSave;
+    private LoadSaveHabits loadSave;
 
 
     @Override

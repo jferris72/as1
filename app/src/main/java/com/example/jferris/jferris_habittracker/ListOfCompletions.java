@@ -14,6 +14,8 @@ import java.util.Calendar;
 
 /**
  * Created by jferris on 02/10/16.
+ * Extends array adapter used to provide a getView for the completion list
+ * implements the completion delete button
  */
 public class ListOfCompletions extends ArrayAdapter<Calendar> {
     Context context;

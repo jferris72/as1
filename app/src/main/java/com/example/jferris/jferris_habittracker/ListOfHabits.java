@@ -20,10 +20,13 @@ import java.util.Calendar;
 
 /**
  * Created by jferris on 29/09/16.
+ * Extends the array adapter class to implement a habit adapter
+ * used to list the habits and provides a delete and complete button
+ * shows if the habit has been completed for the day or not
  */
 public class ListOfHabits extends ArrayAdapter<Habit> {
-    Context context;
-    ArrayList<Habit> habitList = new ArrayList<Habit>();
+    private Context context;
+    private ArrayList<Habit> habitList = new ArrayList<Habit>();
 
 
     public ListOfHabits(Context context, ArrayList<Habit> habitList) {

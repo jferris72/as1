@@ -9,6 +9,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+/**
+ * This activity lists the completions of a chosen habit
+ * It tells the user how many completions are recorded for the habit
+ * The user may delete any of the completions from the habit
+ */
+
 public class CompletionListActivity extends Activity {
     private TextView completionTitle;
     private TextView numberCompletions;
