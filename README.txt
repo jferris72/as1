@@ -11,3 +11,10 @@ Use the drop down menu at the top right to navigate to a list of All Habits or t
 To view the list of completions for a habit go to all habits and click on the list item of the habit. 
 
 Use the back key of the android phone to navigate back from a screen to the previous screen.
+
+
+When importing into android studio:
+
+Import the folder /app/ as a new project -> import project
+
+must download build tools version 23.0.0
