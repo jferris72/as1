@@ -34,6 +34,8 @@ import com.google.gson.reflect.TypeToken;
 
 /**
  * Created by jferris on 27/09/16.
+ * Activity used to create a habit
+ * allows user to set habit name, start date and select which days the habit is to be completed
  */
 public class CreateHabitActivity extends Activity {
     private static final String FILENAME = "habitFile.sav";
